@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Piccolidiavoli</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all'%>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <%= javascript_include_tag 'application' %>
+  </head>
+
+  <body>
+    <ul id="dropdown1" class="dropdown-content">
+      <li><a href="http://www.ehf-ehc.eu/EHC/Race/index.php">EHC 2019</a></li>
+      <li><a href="https://paraciclismo.federciclismo.it/it/race/?year=2019&month=3">Italia 2019</a></li>
+    </ul>
+    <nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo">Piccoli diavoli</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="/team">Il Team</a></li>
+        <li><a href="#!">Calendario</a></li>
+        <li><a href="/monza">Il tempio della Velocità</a></li>
+        <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Dropdown<i class="material-icons right">arrow_drop_down</i></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+    <div class="container" style="margin-top: 1em;">
+       <%= yield %>
+  </div>
+   
+   <script type="text/javascript">
+    $( document ).ready(function(){
+     $(".dropdown-trigger").dropdown();
+     $('.carousel.carousel-slider').carousel({
+        fullWidth: true
+      });
+    });
+   </script>
+  </body>
+</html>
