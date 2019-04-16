@@ -1,0 +1,2 @@
+class Siteview < ApplicationRecord
+end

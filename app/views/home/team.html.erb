@@ -1,0 +1,36 @@
+<style type="text/css">
+	.atleta_img{
+		width: 350px;
+	}
+	.atleta_grid{
+		display: grid;
+		grid-template-areas: "img descr";
+
+	}
+
+	.img{
+		grid-area: img;
+	}
+
+	.descr{
+		grid-area: descr;
+	}
+
+</style>
+<div class="team"> 
+	<h3>Alessando "The boss" Villa</h3>
+	<div class="atleta_grid">
+		<div class="img"><%= image_tag "carousel_3", :class => "atleta_img" %></div>
+		<div class="descr"><p>Alessandro Villa</p></div>
+	</div>
+	<h3>Federico "Sua maestà" Villa</h3>
+	<div class="atleta_grid">
+		<div class="img"><%= image_tag "kiko", :class => "atleta_img" %></div>
+		<div class="descr"><p>Federico Villa</p></div>
+	</div>
+	<h3>Andrea "Mini Zanardi" Villa</h3>
+	<div class="atleta_grid">
+		<div class="img"><%= image_tag "andrea", :class => "atleta_img"%></div>
+		<div class="descr"><p>Alessandro Villa</p></div>
+	</div>
+</div>

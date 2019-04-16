@@ -18,12 +18,11 @@
     </ul>
     <nav>
     <div class="nav-wrapper">
-      <a href="#" class="brand-logo">Piccoli diavoli</a>
+      <a href="/" class="brand-logo">Piccoli diavoli</a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li><a href="/team">Il Team</a></li>
-        <li><a href="#!">Calendario</a></li>
         <li><a href="/monza">Il tempio della Velocità</a></li>
-        <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Dropdown<i class="material-icons right">arrow_drop_down</i></a>
+        <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Calendario <i class="material-icons right">arrow_drop_down</i></a>
         </li>
       </ul>
     </div>
@@ -40,5 +39,8 @@
       });
     });
    </script>
+   <footer style="text-align:center;">
+     <span> Numero di visualizzazioni: <%= @visualizzazioni %> </span>
+   </footer>
   </body>
 </html>
