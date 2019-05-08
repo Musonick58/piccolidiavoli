@@ -14,3 +14,17 @@
  *
  *= require materialize-css/dist/css/materialize.min.css
  */
+
+.fullsize_menu{
+ 	display: none;
+ 	@media screen and (min-width: 993px) {
+		display: block;
+	}
+ }
+
+ .mobile_menu{
+ 	display: none;
+ 	@media screen and (max-width: 992px) {
+		display: block;
+	}
+ }
