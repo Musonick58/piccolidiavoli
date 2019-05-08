@@ -15,12 +15,45 @@
  *= require materialize-css/dist/css/materialize.min.css
  */
 
+body{
+	background: #585959;
+}
+
+p,span,div,h1,h2,h3,h4,h5,h6{
+	color: white;
+}
+
 .fullsize_menu{
  	display: none;
  	@media screen and (min-width: 993px) {
 		display: block;
 	}
  }
+
+ nav.fullsize_menu > div.nav-wrapper{
+	background: #444545;
+	position: fixed;
+	width: 100%;
+	height: auto;
+	z-index: 1;
+}
+
+.bandiere{
+  width: 24px;
+}
+.my_sidenav{
+  background-color: #585959 !important;
+  p,div,ul,li,a{
+  	color: white !important;
+  }
+}
+
+nav.mobile_menu > div.nav-wrapper{
+	background: #444545;
+}
+.sidenav li > a > i, .sidenav li > a > i.material-icons.my_icons{
+	color:white;
+}
 
  .mobile_menu{
  	display: none;

@@ -16,8 +16,17 @@
   <body>
 
     <ul id="dropdown1" class="dropdown-content">
-      <li><a href="http://www.ehf-ehc.eu/EHC/Race/index.php">EHC 2019</a></li>
-      <li><a href="https://paraciclismo.federciclismo.it/it/race/?year=2019&month=3">Italia 2019</a></li>
+      <li>
+        <a href="https://paraciclismo.federciclismo.it/it/race/?year=2019&month=3">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Flag_of_Italy.svg/280px-Flag_of_Italy.svg.png" class="bandiere" alt="italiani">
+        Italia
+        </a>
+      </li>
+      <li>
+        <a href="http://www.ehf-ehc.eu/EHC/Race/index.php">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Flag_of_Europe.svg/2000px-Flag_of_Europe.svg.png" class="bandiere" alt="europei">EHC
+        </a>
+      </li>
     </ul>
     <nav class="fullsize_menu">
       <div class="nav-wrapper ">
@@ -26,7 +35,7 @@
           <li><a href="/home">Home</a></li>
           <li><a href="/team">Il Team</a></li>
           <li><a href="/tempio">Il tempio della Velocità</a></li>
-          <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Calendario <i class="material-icons right">arrow_drop_down</i></a>
+          <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Calendario <%= Time.new.year %> <i class="material-icons right">arrow_drop_down</i></a>
           </li>
         </ul>
       </div>
@@ -35,28 +44,84 @@
       <li><a href="/home">Home</a></li>
       <li><a href="/team">Il Team</a></li>
       <li><a href="/tempio">Il tempio della Velocità</a></li>
-      <li><a href="http://www.ehf-ehc.eu/EHC/Race/index.php">EHC 2019</a></li>
-      <li><a href="https://paraciclismo.federciclismo.it/it/race/?year=2019&month=3">Italia 2019</a></li>
+      <li><a href="http://www.ehf-ehc.eu/EHC/Race/index.php">EHC</a></li>
+      <li>
+        <a href="https://paraciclismo.federciclismo.it/it/race/?year=<%=Time.new.year%>&month=<%=Time.new.month%>">
+          Italia 
+        </a>
+      </li>
   </ul>
   <nav class="mobile_menu">
     <div class="nav-wrapper ">
-      <ul id="nav-mobile" class="left">
+      <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <a href="/" class="brand-logo">Piccoli diavoli</a>
+      <!--ul id="nav-mobile" class="left">
         <li>
           <a class="dropdown-trigger" href="#!" data-target="dropdown_mobile">
             <i class="material-icons right">menu</i>
           </a>
         </li>
-      </ul>
+      </ul-->
     </div>
   </nav>
+  <ul id="slide-out" class="sidenav my_sidenav">
+    <li>
+       <span style="float:right;">
+          <i class="material-icons">close</i>
+        </span>
+      <div class="user-view" onclick="$('.sidenav').sidenav('close');" style="min-height: 120px;">
+        <div class="background">
+          <%= image_tag "piccolidiavoli_bkg.png", :style => "width: 100%" %>
+        </div>
+      <!--a href="#user"><img class="circle" src="images/yuna.jpg"></a>
+      <a href="#name"><span class="white-text name">John Doe</span></a>
+      <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a-->
+    </div></li>
+    <li>
+      <a href="/">
+        <i class="material-icons my_icons">home</i>
+        Home
+      </a>
+    </li>
+    <li>
+      <a href="/team">
+        <i class="material-icons my_icons">group</i>
+        Team
+      </a>
+    </li>
+    <li>
+      <a href="/tempio">
+        <i class="material-icons my_icons">time_to_leave</i>
+        Tempio della velocità
+      </a>
+    </li>
+    <li><div class="divider"></div></li>
+    <li><div class="subheader" style="margin-left: 1em;">Calendario 2019</div></li>
+    <li>
+      <a href="https://paraciclismo.federciclismo.it/it/race/?year=<%=Time.new.year%>&month=<%=Time.new.month%>">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Flag_of_Italy.svg/280px-Flag_of_Italy.svg.png" class="bandiere">
+        Italia
+      </a>
+    </li>
+    <li>
+      <a href="http://www.ehf-ehc.eu/EHC/Race/index.php">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Flag_of_Europe.svg/2000px-Flag_of_Europe.svg.png" class="bandiere">
+        EHC
+      </a>
+    </li>
+    <li><div class="divider"></div></li>
+  </ul>
+        
+        
   <div class="container" style="margin-top: 1em;">
        <%= yield %>
   </div>
    
    <script type="text/javascript">
     $( document ).ready(function(){
-     $(".dropdown-trigger").dropdown();
-     $('.carousel.carousel-slider').carousel({
+      $('.sidenav').sidenav();
+      $(".dropdown-trigger").dropdown();
+      $('.carousel.carousel-slider').carousel({
         fullWidth: true
       });
     });
