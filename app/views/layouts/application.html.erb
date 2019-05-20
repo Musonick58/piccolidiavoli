@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Piccolidiavoli</title>
+    <title>Piccoli Diavoli</title>
     <%= render :partial => "/layouts/meta" %>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -13,7 +13,7 @@
   </head>
 
   <body>
-
+    <h1 style="display: none">Piccoli Diavoli</h1>
     <ul id="dropdown1" class="dropdown-content">
       <li>
         <a href="https://paraciclismo.federciclismo.it/it/race/?year=2019&month=3">
@@ -27,14 +27,8 @@
         </a>
       </li>
     </ul>
-
     <ul id="dropdown_team" class="dropdown-content">
-       <li>
-        <a href="/team">
-          Il Team
-        </a>
-      </li>
-     <li>
+      <li>
         <a href="/alessandro">
           Alessandro Villa
         </a>
@@ -63,7 +57,7 @@
 
     <nav class="fullsize_menu">
       <div class="nav-wrapper ">
-        <a href="/" class="brand-logo my_logo">Benvenuto nel sito PD3R</a>
+        <a href="/" class="brand-logo my_logo">Piccoli Diavoli</a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
           <li><a href="/home">Home</a></li>
           <li><a class="dropdown-trigger" href="#!" data-target="dropdown_team">Il Team <i class="material-icons right">arrow_drop_down</i> </a></li>
@@ -87,7 +81,7 @@
   <nav class="mobile_menu">
     <div class="nav-wrapper ">
       <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-      <a href="/" class="brand-logo my_logo">Benvenuto nel sito PD3R</a>
+      <a href="/" class="brand-logo my_logo">Piccoli Diavoli</a>
       <!--ul id="nav-mobile" class="left">
         <li>
           <a class="dropdown-trigger" href="#!" data-target="dropdown_mobile">
@@ -147,11 +141,6 @@
       <div class="subheader" style="margin-left: 1em;">
         Atleti
       </div>
-    </li>
-    <li>
-      <a href="/team">
-        Il Team
-      </a>
     </li>
     <li>
       <a href="/alessandro">
