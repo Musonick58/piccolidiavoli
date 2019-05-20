@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Piccoli Diavoli</title>
+    <title><%= @title  %></title>
     <%= render :partial => "/layouts/meta" %>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -188,6 +188,7 @@
    </script>
    <footer style="text-align:center;">
      <span> Numero di visualizzazioni: <%= @visualizzazioni %> </span>
+     <div class=""><p>©<a href="http://www.nicolamusolino.it">Nicola Musolino</a></p></div>
    </footer>
   </body>
 </html>
