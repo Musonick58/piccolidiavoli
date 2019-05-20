@@ -27,12 +27,46 @@
         </a>
       </li>
     </ul>
+
+    <ul id="dropdown_team" class="dropdown-content">
+       <li>
+        <a href="/team">
+          Il Team
+        </a>
+      </li>
+     <li>
+        <a href="/alessandro">
+          Alessandro Villa
+        </a>
+      </li>
+      <li>
+        <a href="/federico">
+          Federico Villa
+        </a>
+      </li>
+      <li>
+        <a href="/andrea">
+          Andrea Villa
+        </a>
+      </li>
+      <li>
+        <a href="/iago">
+          Iago
+        </a>
+      </li>
+      <li>
+        <a href="/franco">
+          Franco
+        </a>
+      </li>
+    </ul>
+
     <nav class="fullsize_menu">
       <div class="nav-wrapper ">
-        <a href="/" class="brand-logo">Benvenuto nel sito PD3R</a>
+        <a href="/" class="brand-logo my_logo">Benvenuto nel sito PD3R</a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
           <li><a href="/home">Home</a></li>
-          <li><a href="/team">Il Team</a></li>
+          <li><a class="dropdown-trigger" href="#!" data-target="dropdown_team">Il Team <i class="material-icons right">arrow_drop_down</i> </a></li>
           <li><a href="/tempio">Il tempio della Velocità</a></li>
           <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Calendario <%= Time.new.year %> <i class="material-icons right">arrow_drop_down</i></a>
           </li>
@@ -53,7 +87,7 @@
   <nav class="mobile_menu">
     <div class="nav-wrapper ">
       <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-      <a href="/" class="brand-logo">Benvenuto nel sito PD3R</a>
+      <a href="/" class="brand-logo my_logo">Benvenuto nel sito PD3R</a>
       <!--ul id="nav-mobile" class="left">
         <li>
           <a class="dropdown-trigger" href="#!" data-target="dropdown_mobile">
@@ -109,7 +143,16 @@
       </a>
     </li>
     <li><div class="divider"></div></li>
-    <li><div class="subheader" style="margin-left: 1em;">Atleti</div></li>
+    <li>
+      <div class="subheader" style="margin-left: 1em;">
+        Atleti
+      </div>
+    </li>
+    <li>
+      <a href="/team">
+        Il Team
+      </a>
+    </li>
     <li>
       <a href="/alessandro">
         Alessandro Villa
