@@ -61,3 +61,44 @@ nav.mobile_menu > div.nav-wrapper{
 		display: block;
 	}
  }
+
+.atleta_img{
+	width: 350px;
+}
+
+.atleta_grid{
+	display: grid;
+	grid-template-areas: "img descr";
+}
+
+.ale_img{
+	width: 50%;
+}
+
+.img{
+	grid-area: img;
+}
+
+.descr{
+	grid-area: descr;
+}
+.mh1{
+	color: green;
+	text-shadow: 2px 2px 4px #000;
+}
+.mh2{
+	color: lightblue;
+	text-shadow: 2px 2px 4px #000;
+}
+.mh3{
+	color: white;
+	text-shadow: 2px 2px 4px #000;
+}
+.mh4{
+	color: red;
+	text-shadow: 2px 2px 4px #000;
+}
+.mhou23{
+	color: black;
+	text-shadow: 2px 2px 4px #FFF;
+}

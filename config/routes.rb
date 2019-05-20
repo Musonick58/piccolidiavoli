@@ -12,6 +12,11 @@ Rails.application.routes.draw do
   match 'team',       via: [:get], :to => "home#team"
   match 'tempio',     via: [:get], :to => "home#tempio"
   match 'calendario', via: [:get], :to => "home#calendario"
+  match '/alessandro',       via: [:get], :to => "home#alessandro"
+  match '/federico',       via: [:get], :to => "home#federico"
+  match '/andrea',       via: [:get], :to => "home#andrea"
+  match '/iago',       via: [:get], :to => "home#iago"
+  match '/franco',       via: [:get], :to => "home#franco"
 
 
 end
