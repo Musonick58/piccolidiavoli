@@ -98,22 +98,33 @@ nav.mobile_menu > div.nav-wrapper{
 	grid-area: descr;
 }
 .mh1{
-	color: green;
-	text-shadow: 2px 2px 4px #000;
+	color: green !important;
+	text-shadow: 2px 2px 4px #000 !important;
 }
 .mh2{
-	color: lightblue;
-	text-shadow: 2px 2px 4px #000;
+	color: lightblue !important;
+	text-shadow: 2px 2px 4px #000 !important;
 }
 .mh3{
-	color: white;
-	text-shadow: 2px 2px 4px #000;
+	color: white !important;
+	text-shadow: 2px 2px 4px #000 !important;
 }
 .mh4{
-	color: red;
-	text-shadow: 2px 2px 4px #000;
+	color: red !important;
+	text-shadow: 2px 2px 4px #000 !important;
 }
 .mhou23{
-	color: black;
-	text-shadow: 2px 2px 4px #FFF;
+	color: black !important;
+	text-shadow: 2px 2px 4px #FFF !important;
 }
+
+.atleta_h2{
+	font-size: 30px !important;
+}
+
+.atleta_h3{
+	font-size: 28px !important;
+}
+
+
+
