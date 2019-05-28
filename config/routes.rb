@@ -9,14 +9,15 @@ Rails.application.routes.draw do
   	get :calendario, :on => :collection
   end
 
-  match 'team',       via: [:get], :to => "home#team"
-  match 'tempio',     via: [:get], :to => "home#tempio"
-  match 'calendario', via: [:get], :to => "home#calendario"
+  match 'team',              via: [:get], :to => "home#team"
+  match 'tempio',            via: [:get], :to => "home#tempio"
+  match 'calendario',        via: [:get], :to => "home#calendario"
   match '/alessandro',       via: [:get], :to => "home#alessandro"
-  match '/federico',       via: [:get], :to => "home#federico"
-  match '/andrea',       via: [:get], :to => "home#andrea"
-  match '/iago',       via: [:get], :to => "home#iago"
-  match '/franco',       via: [:get], :to => "home#franco"
-
+  match '/federico',         via: [:get], :to => "home#federico"
+  match '/andrea',           via: [:get], :to => "home#andrea"
+  match '/iago',             via: [:get], :to => "home#iago"
+  match '/franco',           via: [:get], :to => "home#franco"
+  match '/giovanni',         via: [:get], :to => "home#giovanni"
+  match '/emanuele',         via: [:get], :to => "home#emanuele"
 
 end

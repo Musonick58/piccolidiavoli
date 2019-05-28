@@ -23,27 +23,13 @@ p,span,div,h1,h2,h3,h4,h5,h6{
 	color: white;
 }
 
-.fullsize_menu{
- 	display: none;
- 	@media screen and (min-width: 993px) {
-		display: block;
-	}
- }
-
- nav.fullsize_menu > div.nav-wrapper{
-	background: #444545;
-	position: fixed;
-	width: 100%;
-	height: auto;
-	z-index: 1;
-}
 
 .bandiere{
   width: 24px;
 }
 .my_sidenav{
   background-color: #585959 !important;
-  p,div,ul,li,a{
+  p,div,ul,li, a.my_link{
   	color: white !important;
   }
 }
@@ -56,16 +42,26 @@ nav.mobile_menu > div.nav-wrapper{
 }
 
  .mobile_menu{
- 	display: none;
- 	@media screen and (max-width: 992px) {
 		display: block;
-	}
  }
 
 .atleta_img{
 	width: 350px;
 }
 
+nav .brand-logo.my_logo{
+	display: block !important;
+}
+
+nav a.sidenav-trigger {
+    display: block !important;
+}
+
+nav .brand-logo {
+    left: 50% !important;
+    -webkit-transform: translateX(-50%) !important;
+    transform: translateX(-50%) !important;
+}
 
 /*nav .brand-logo.my_logo{
 	@media screen and (max-width: 360px){
