@@ -15,19 +15,25 @@
     <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"></script>
     <script>
     window.addEventListener("load", function(){
-    window.cookieconsent.initialise({
-      "palette": {
-        "popup": {
-          "background": "#252e39"
-        },
-        "button": {
-          "background": "#14a7d0"
+      window.cookieconsent.initialise(
+        {
+          "palette": {
+            "popup": {
+              "background": "#252e39"
+            },
+            "button": {
+              "background": "#14a7d0"
+            }
+          },
+          "content": {
+          "message": "Questo sito utilizza i cookies per offrirti la migliore esperienza nel sito",
+          "dismiss": "OK!",
+          "link": "Scopri di più!",
+          "href": "http://www.piccolidiavolit.it/policy"
+          }
         }
-      },
-      "content": {
-        "href": "http://www.piccolidiavolit.it/policy"
-      }
-    })});
+      )
+    });
     </script>
   </head>
 
