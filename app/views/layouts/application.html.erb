@@ -33,29 +33,10 @@
 
   <body>
   <h1 style="display: none">Piccoli Diavoli</h1>
-   
-  <ul id="dropdown_mobile" class="dropdown-content">
-      <li><a href="/home">Home</a></li>
-      <!--li><a href="/team">Il Team</a></li-->
-      <li><a href="/tempio">Il tempio della Velocità, Circuito di Monza</a></li>
-      <li><a href="http://www.ehf-ehc.eu/EHC/Race/index.php">EHC</a></li>
-      <li>
-        <a href="https://paraciclismo.federciclismo.it/it/race/?year=<%=Time.new.year%>&month=<%=Time.new.month%>">
-          Italia 
-        </a>
-      </li>
-  </ul>
   <nav class="mobile_menu">
     <div class="nav-wrapper ">
       <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
       <a href="/" class="brand-logo my_logo"><%= image_tag "logo.png",:style => "width: 64px;"%></a>
-      <!--ul id="nav-mobile" class="left">
-        <li>
-          <a class="dropdown-trigger" href="#!" data-target="dropdown_mobile">
-            <i class="material-icons right">menu</i>
-          </a>
-        </li>
-      </ul-->
     </div>
   </nav>
   <ul id="slide-out" class="sidenav my_sidenav">
@@ -67,32 +48,18 @@
         <div class="background">
           <%= image_tag "piccolidiavoli_bkg.png", :style => "width: 100%" %>
         </div>
-      <!--a href="#user"><img class="circle" src="images/yuna.jpg"></a>
-      <a href="#name"><span class="white-text name">John Doe</span></a>
-      <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a-->
-    </div></li>
+      </div>
+    </li>
     <li>
       <a class="my_link" href="/">
         <i class="material-icons my_icons">home</i>
         Home
       </a>
     </li>
-    <!--li>
-      <a class="my_link" href="/team">
-        <i class="material-icons my_icons">group</i>
-        Team
-      </a>
-    </li-->
     <li>
       <a class="my_link" href="/tempio">
         <i class="material-icons my_icons">time_to_leave</i>
-        Tempio della velocità
-      </a>
-    </li>
-    <li>
-      <a class="my_link" href="/tempio">
-        <i class="material-icons my_icons">time_to_leave</i>
-        Monza
+        <div style="line-height: 24px;">Il tempio della Velocità, Circuito di Monza</div>
       </a>
     </li>
     <li><div class="divider"></div></li>
@@ -135,9 +102,14 @@
       });
     });
    </script>
-   <footer style="text-align:center;">
-     <span> Numero di visualizzazioni: <%= @visualizzazioni %> </span>
-     <div class=""><p>©<a href="http://www.nicolamusolino.it">Nicola Musolino</a></p></div>
+   <footer>
+      <span>Piccoli Diavoli 3 Route</span>
+      <span> - Ass. Sportiva Dilettantistica Onlus</span>
+      <span> - Via Claudio Cesana, 2</span>
+      <span> - Carate Brianza (MB)</span>
+      <span> - C.F 05207040964</span>
+      <div> Numero di visualizzazioni: <%= @visualizzazioni %> </div>
+      <div class=""><p>©<a href="http://www.nicolamusolino.it">Nicola Musolino</a></p></div>
    </footer>
   </body>
 </html>
