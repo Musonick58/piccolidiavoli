@@ -10,7 +10,7 @@ class ApplicationController < ActionController::Base
 	def https
 		response.set_header('X_FORWARDED_PROTO', 'https')
 		return nil if Rails.env.development?
-		return redirect_to(request.original_url.gsub("http://www.piccolidiavoli.it",""), {:protocol => "https://",  :status => 301}) if request.original_url["http://"]
+		return redirect_to(request.original_url.gsub("http://www.piccolidiavoli.it","https://www.piccolidiavoli.it")) if request.original_url["http://"]
 	end
 
 	def set_title_and_description
