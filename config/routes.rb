@@ -19,5 +19,6 @@ Rails.application.routes.draw do
   match '/franco',           via: [:get], :to => "home#franco"
   match '/giovanni',         via: [:get], :to => "home#giovanni"
   match '/emanuele',         via: [:get], :to => "home#emanuele"
+  match '/policy',           via: [:get], :to => "home#privacy"
 
 end

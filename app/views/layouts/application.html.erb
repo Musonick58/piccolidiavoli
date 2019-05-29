@@ -9,7 +9,26 @@
     <%= stylesheet_link_tag 'application', media: 'all'%>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
     <%= javascript_include_tag 'application' %>
+
+    <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"></script>
+    <script>
+    window.addEventListener("load", function(){
+    window.cookieconsent.initialise({
+      "palette": {
+        "popup": {
+          "background": "#252e39"
+        },
+        "button": {
+          "background": "#14a7d0"
+        }
+      },
+      "content": {
+        "href": "http://www.piccolidiavolit.it/policy"
+      }
+    })});
+    </script>
   </head>
 
   <body>
@@ -18,8 +37,7 @@
   <ul id="dropdown_mobile" class="dropdown-content">
       <li><a href="/home">Home</a></li>
       <!--li><a href="/team">Il Team</a></li-->
-      <li><a href="/tempio">Il tempio della Velocità</a></li>
-      <li><a href="/tempio">Monza</a></li>
+      <li><a href="/tempio">Il tempio della Velocità, Circuito di Monza</a></li>
       <li><a href="http://www.ehf-ehc.eu/EHC/Race/index.php">EHC</a></li>
       <li>
         <a href="https://paraciclismo.federciclismo.it/it/race/?year=<%=Time.new.year%>&month=<%=Time.new.month%>">
