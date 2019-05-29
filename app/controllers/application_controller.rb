@@ -8,7 +8,7 @@ class ApplicationController < ActionController::Base
 	end
 
 	def set_title_and_description
-		@title = "Piccoli Diavoli"
+		@title = "Piccoli Diavoli 3 Route - PD3R"
 		@description = "Piccoli Diavoli 3 Ruote è una ASD presente nel circuito paraciclistico"
 		@current_url = request.original_url
 	end
