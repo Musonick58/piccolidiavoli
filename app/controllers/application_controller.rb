@@ -9,7 +9,7 @@ class ApplicationController < ActionController::Base
 
 	def https
 		return nil if Rails.env.development?
-		return redirect_to(request.original_url.gsub("http://","https://"), :status => 301) if request.original_url["http://"]
+		return redirect_to(:protocol => "https://", request.original_url.gsub("http://","https://"), :status => 301) if request.original_url["http://"]
 	end
 
 	def set_title_and_description
