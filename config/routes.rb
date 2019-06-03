@@ -9,6 +9,8 @@ Rails.application.routes.draw do
   	get :calendario, :on => :collection
   end
 
+  resources :ftp 
+  
   match 'team',              via: [:get], :to => "home#team"
   match 'tempio',            via: [:get], :to => "home#tempio"
   match 'calendario',        via: [:get], :to => "home#calendario"
@@ -20,5 +22,6 @@ Rails.application.routes.draw do
   match '/giovanni',         via: [:get], :to => "home#giovanni"
   match '/emanuele',         via: [:get], :to => "home#emanuele"
   match '/policy',           via: [:get], :to => "home#privacy"
+  match '/ftp',              via: [:get], :to => "ftp#index"
 
 end
