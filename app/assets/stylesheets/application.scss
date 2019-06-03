@@ -129,4 +129,19 @@ footer{
 	}
 }
 
+.banner_grid{
+	grid-template-areas: 'aisa frase';
+	display: grid;
+}
 
+.aisa{
+	grid-area: aisa;
+}
+
+.frase{
+	grid-area: frase;
+	font-size: 20px;
+	@media screen and (min-width: 480px ){
+		font-size: 24px;
+	}
+}
