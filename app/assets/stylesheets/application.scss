@@ -63,20 +63,6 @@ nav .brand-logo {
     transform: translateX(-50%) !important;
 }
 
-/*nav .brand-logo.my_logo{
-	@media screen and (max-width: 360px){
-		font-size: 14px !important;
-		font-weight: bold !important;
-	}
-	@media screen and (min-width: 361px) and (max-width: 440px){
-		font-size: 15px !important;
-		font-weight: bold !important;
-	}
-	@media screen and (min-width: 441px) and (max-width: 662px){
-		font-size: 16px !important;
-		font-weight: bold !important;
-	}
-}*/
 .atleta_grid{
 	display: grid;
 	grid-template-areas: "img descr";
@@ -92,6 +78,11 @@ nav .brand-logo {
 
 .descr{
 	grid-area: descr;
+	p{
+		font-size: 16px;
+		margin-top: 0;
+		margin-left: 15px;
+	}
 }
 .mh1{
 	color: green !important;
@@ -124,6 +115,7 @@ nav .brand-logo {
 
 
 footer{
+	text-align: center;
 	span,div,p{
 		font-size: 12px;
 	}
