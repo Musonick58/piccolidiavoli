@@ -35,6 +35,11 @@ class HomeController < ApplicationController
 		@description = "Franco Manusé, uno dei migliori atleti della Piccoli Diavoli 3 Route"
 	end
 
+	def franz
+		@title = "Piccoli Diavoli 3 Ruote - Franz Parolo"
+		@description = "Franz Parolo, uno dei migliori atleti della Piccoli Diavoli 3 Route"
+	end
+
 	def tempio
 		@title = "Tempio della velocità, Circuito di Monza -  Piccoli Diavoli 3 Ruote"
 		@description = "Monza, il tempio della velocità. Ogni anno si disputa la gara di handbike più bella del mondo, che si disputa nel percorso più entusiasmante del mondo"

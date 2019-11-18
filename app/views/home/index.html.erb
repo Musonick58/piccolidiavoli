@@ -1,4 +1,64 @@
-<div class="story">
+<div class="container">
+<% @images = Dir.glob("app/assets/images/carousel/*") %>
+  <div class="carousel carousel-slider">
+    <% @images.each do |img| %>
+      <a class="carousel-item" href="#one!">
+        <%= image_tag "carousel/#{img.split('/').last}" %>
+      </a>
+    <% end %>
+  </div>
+</div>
+
+
+
+<div class="parallax-container">
+  <div class="parallax"><%= image_tag "sfondo.png" %></div>
+</div>
+
+<div class="section my_grey">
+  <div class="row container">
+    <h3 class="header">Chi siamo</h3>
+    <p class=" text-darken-3 lighten-3">
+      «Non è tanto la gara che conta. Non corriamo con l’ansia di vincere. Un ‘Piccolo diavolo’ affronta le prove con uno spirito diverso, per noi l’handbike è molto di più». È libertà, riscatto. È pane quotidiano. Alessandro Villa, alias “il boss”, è il fondatore della Onlus sportiva Piccoli diavoli 3 ruote, nata il 28 febbraio del 2006 in Brianza. Non si è arreso di fronte all’atassia, una malattia rara e degenerativa, in sella alla sua handbike ha girato il mondo e ha deciso di creare l’associazione per trasmettere la stessa forza a chi, come lui, è costretto sulla sedia a rotelle...
+      <div class="grey-text read_more">Leggi di più!<p style="text-align: right;">di Simona Ballatore</p></div>
+      <span id="intro" class="text-darken-3 lighten-3" style="display: none;">
+        «Con l’handbike – racconta - metti in gioco tutto te stesso. Mentre una persona normodotata più si allena più diventa forte, per noi atassici più passa il tempo più le forze vengono meno. È una malattia che colpisce la coordinazione dei movimenti. Non ci sono cure e siamo consapevoli dei nostri limiti. Ma ho provato sulla mia pelle che aiutando la massa muscolare si ostacola la malattia. Non sono migliorato, ok, ma sono ancora qui e ho ottenuto benefici. Così ho pensato di coinvolgere altre persone con diverse forme di disabilità». Facendo squadra, aprendo una scuola di vita insieme a suo fratello Federico, socio fondatore e vicepresidente del team. Stessa patologia, stessa determinazione. «Quando ho scoperto di avere l’atassia ero in quinta superiore. Avevo tutt’altri pensieri, altro che handbike. Mio fratello mi diceva di provare, ma io ero incazzato con il mondo. In realtà, quando non mi vedeva nessuno, prendevo la sua bici e andavo a farmi un giro. Poi però arriva un momento in cui prendi coscienza di te stesso, della disabilità ma anche delle tue capacità. Basta piangersi addosso con domande senza senso come ‘Perché proprio a me?’. Ne prendi atto e vai oltre», dice con forza Federico, che partecipa ai Campionati del Mondo e sale anche in cattedra, promovendo progetti nelle scuole. Oggi i Piccoli diavoli sono dieci, ciascuno con la sua storia. Franco Manusé sta girando i continenti in sella, affidandosi alla forza delle sue braccia e confidando nella sua esperienza, perché gli ostacoli non mancano. «Se le strade non sono a prova di bicicletta - racconta - non lo sono a maggior ragione a prova di handbike. Sei a pochi centimetri dall’asfalto, altezza portiera. La bandierina è d’obbligo ma spesso non basta». Le piste ciclabili sono a volte sconnesse, ma c’è chi la utilizza come mezzo di spostamento privilegiato, stando bene attento ai pericoli. «Quando si gira in città o in paese il pericolo oltre al traffico è rappresentato dalle auto in sosta. Mai passare di fianco, non ti vedono». Gare, viaggi, esperienze di vita. L’obiettivo del gruppo è quello di crescere ancora. «Prestiamo le handbike a chi è alle prime armi. Una treruote è dispendiosa e, se non si è convinti, spesso non si osa provare. La nostra prima handbike si chiama non a caso Provami, poi, se c’è la passione, il resto vien da sé». Da un telaio e da pezzi messi insieme è nata la Bat Bike con la quale anche il giovanissimo Alessandro Avanzi, alias Stellino, ha affrontato le prime maratone della sua vita. “I will never get up”, si è tatuato sulla spalla. Non si arrende il ventunenne, protagonista anche di un cortometraggio, firmato da Marco ed Enrico Giacalone, che – raccontando la sua storia e la passione per la tre ruote – ha vinto il primo premio del concorso FilmAbile indetto dalla Provincia di Milano.
+      Adesso i piccoli e grandi Diavoli si preparano a nuove sfide, cercando sponsor ma soprattutto nuovi compagni di squadra. Anche quote rosa, perché no. In questi mesi stanno disputando il Giro d’Italia di handbike e il 14 settembre terranno a battesimo la quarta edizione di un evento di paraciclismo, l’atteso Gran Premio di Monza, che fra i migliori atleti italiani e stranieri vede schierato anche Alex Zanardi e i suoi compagni della nazionale italiana. «In questa gara perdifiato in pista di F1 la domenica dopo del GP lo spettatore vedrà quanto sia sottile e talvolta inesistente la distinzione disabile-abile, proprio in uno sport praticabile da tutti, dove la passione è l'unico vero motore», assicurano i Diavoli.
+      «La squadra ti aiuta non a vincere la gara ma a partecipare – ricorda il boss - a cercare di combattere la malattia, insieme. La bici ti dà libertà. Possiamo andare ovunque con l’handbike, al supermercato oppure a prendere i bimbi a scuola, ci ha permesso di andare avanti, di realizzare alcuni nostri sogni: ho attraversato il ponte della Florida, circondato dai delfini». «Non sei fermo in una location come succede per altri sport – conferma Federico - il tuo campo è la strada. E le strade sono infinite. Il traguardo vero? La condivisione di una situazione non certo semplice ma vissuta con estrema gioia di vivere. C’è gente che alla prima caduta si arrende e chi si rialza». E pedala.
+      <p style="text-align: right;">di Simona Ballatore</p>
+      <div class="grey-text read_less" style="display: none">Leggi meno!</div>
+  </span>
+</p>
+  </div>
+</div>
+<div class="parallax-container">
+  <div class="parallax"><%= image_tag "franco.jpg" %></div>
+</div>
+<div class="section my_grey">
+  <div class="row container">
+    <h3 class="header">Sponsors</h3>
+    <span>
+      <a href="https://ziopizza.it/" alt="Zio Pizza & Burger">
+        <%= image_tag "sponsors/zio_pizza.png", :style => "width: 150px;display: inline;" %>
+      </a>
+      <!--a href="https://ziopizza.it/" alt="Zio Pizza & Burger">
+        <%#= image_tag "sponsors/zio_pizza.png", :style => "width: 150px;display: inline;" %>
+      </a-->
+    </span>
+  </div>
+</div>
+<div class="parallax-container">
+  <div class="parallax"><%= image_tag "andrea/presentazione.jpg" %></div>
+</div>
+
+
+
+
+
+
+
+
+<!--div class="story">
 <% @images = Dir.glob("app/assets/images/carousel/*") %>
 <div class="card-content">
     <div class="carousel carousel-slider">
@@ -16,10 +76,13 @@ Adesso i piccoli e grandi Diavoli si preparano a nuove sfide, cercando sponsor m
 </p>
 <p style="text-align: right;">di Simona Ballatore</p>
 </div>
-</div>
+</div-->
 
 <script>
   $(document).ready(function(){
+    $(document).ready(function(){
+      $('.parallax').parallax();
+    });
     $('.carousel.carousel-slider').carousel(
     {
       fullWidth: true,
@@ -30,4 +93,15 @@ Adesso i piccoli e grandi Diavoli si preparano a nuove sfide, cercando sponsor m
   setInterval(function() {
     $('.carousel.carousel-slider').carousel('next');
   }, 4000); 
+  $(".read_more").on("click",function(){
+    $("#intro").css("display","block");
+    $(".read_more").css("display","none");
+    $(".read_less").css("display","block");
+  });
+
+   $(".read_less").on("click",function(){
+    $("#intro").css("display","none");
+    $(".read_more").css("display","block");
+    $(".read_less").css("display","none");
+  })
 </script>

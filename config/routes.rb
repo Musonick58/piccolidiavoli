@@ -16,6 +16,7 @@ Rails.application.routes.draw do
   match 'calendario',        via: [:get], :to => "home#calendario"
   match '/alessandro',       via: [:get], :to => "home#alessandro"
   match '/federico',         via: [:get], :to => "home#federico"
+  match '/franz',            via: [:get], :to => "home#franz"
   match '/andrea',           via: [:get], :to => "home#andrea"
   match '/iago',             via: [:get], :to => "home#iago"
   match '/franco',           via: [:get], :to => "home#franco"
