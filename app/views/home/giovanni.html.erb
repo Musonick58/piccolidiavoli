@@ -15,4 +15,34 @@
       </p>
     </div>
   </div>
+  <br/>
+  <div class="container gallery">
+    <% @images = Dir.glob("app/assets/images/giovanni/*") %>
+    <div class="carousel carousel-slider">
+      <% @images.each do |img| %>
+        <a class="carousel-item" href="#one!">
+          <%= image_tag "giovanni/#{img.split('/').last}" %>
+        </a>
+      <% end %>
+    </div>
 </div>
+<br/>
+<br/>
+<br/>
+<br/>
+<script type="text/javascript">
+  $(document).ready(function(){
+    
+    $('.parallax').parallax();
+    $('.carousel.carousel-slider').carousel(
+    {
+      fullWidth: true,
+      indicators: false,
+      duration: 250
+    });
+  })
+  
+  setInterval(function() {
+    $('.carousel.carousel-slider').carousel('next');
+  }, 4000);
+</script>
